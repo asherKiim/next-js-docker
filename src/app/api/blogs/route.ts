@@ -25,7 +25,7 @@ interface Blog {
 
 // 실제 서버 데이터를 가져오는 예시 함수
 async function fetchServerBlogs(): Promise<Blog[]> {
-	const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blogs`);
+	const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/test`);
 	if (!response.ok) {
 		throw new Error("Failed to fetch blogs from the server");
 	}
